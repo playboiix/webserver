@@ -29,6 +29,15 @@
             function chgtext(elem){
                 elem.innerHTML="woah";
             }
+
+            function loadDoc() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("ajx").innerHTML = this.responseText;
+                    }
+                xhttp.open("GET", "ajx.txt", true);
+                xhttp.send();
+            }
         </script>
 
     </head>
@@ -61,6 +70,7 @@
             <li>I am a good student.</li>
             <li>Most importantly because of <a href="https://www.youtube.com/watch?v=astISOttCQ0"target="_blank">this</a></li>
         </ul>
-
+        <button onclick="loadDoc()">ajax</button>
+        <span id="ajx"></span>
     </body>
 </html>
