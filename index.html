@@ -9,13 +9,17 @@
                 alert("You fucking imbecile! How could you not follow simple instructions?!?!");
             }
 
-            function myFunction(){
+            function Hider(){
                 var x = document.getElementById("div");
                 if (x.style.display === "none") {
                     x.style.display = "block";
                 } else {
                     x.style.display = "none";
                 }
+            }
+
+            function photo(){
+                document.getElementById("img").src = "bestie.png";
             }
         </script>
 
@@ -29,20 +33,20 @@
             <h2><FONT Color=#DC143C>Enjoy your stay and chill out!</FONT></h2>
             <div id="div">This is my little website that i created for class :D</div>
             <p id="demo">Here is a cool little picture of a dna strand!</p>
-            <img src="dna.jpg"/><br/>
+            <img id="img" src="dna.jpg"/><br/>
             <a href="second.html">Magic Portal!</a>
             
             <br/>
             <button onclick="showAlert()">Whatever you do, Don't Click this button</button>
             <br/>
             <button onclick="document.getElementById('demo').innerHTML = Date()">What time is it?</button>
-            <button onclick="myFunction()">Hide Something</button>
+            <button onclick="Hider()">Hide Something</button>
+            
         </center>
         <p>Here are some reasons as to why I should get 100% on this lab.</p>
 
         <ul>
             <li>I am a good student.</li>
-            <li>I followed the lab and accomplished all the bullet points listed in 2.1.4.</li>
             <li>Most importantly because of <a href="https://www.youtube.com/watch?v=astISOttCQ0"target="_blank">this</a></li>
         </ul>
 
