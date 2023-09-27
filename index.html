@@ -11,7 +11,7 @@
             <h1><FONT Color=#6495ED>Welcome to the Traphouse!</FONT></h1>
             <h2><FONT Color=#DC143C>Enjoy your stay and chill out!</FONT></h2>
             <div>This is my little website that i created for class :D</div>
-            <p>Here is a cool little picture of a dna strand!</p>
+            <p id="demo">Here is a cool little picture of a dna strand!</p>
             <img src="dna.jpg"/><br/>
             <a href="second.html">Magic Portal!</a>
             
@@ -22,6 +22,8 @@
                 function showAlert() {
                     alert("You fucking imbecile! How could you not follow simple instructions?!?!");
                 }
+
+                <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
             </script>
 
         </center>
