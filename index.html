@@ -4,10 +4,19 @@
         <title>Sauce Village</title>
 
         <script>
+            
             function showAlert() {
                 alert("You fucking imbecile! How could you not follow simple instructions?!?!");
             }
-            
+
+            function myFunction(){
+                var x = document.getElementById("div1");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
         </script>
 
     </head>
@@ -18,7 +27,7 @@
 
             <h1><FONT Color=#6495ED>Welcome to the Traphouse!</FONT></h1>
             <h2><FONT Color=#DC143C>Enjoy your stay and chill out!</FONT></h2>
-            <div>This is my little website that i created for class :D</div>
+            <div id="div">This is my little website that i created for class :D</div>
             <p id="demo">Here is a cool little picture of a dna strand!</p>
             <img src="dna.jpg"/><br/>
             <a href="second.html">Magic Portal!</a>
@@ -27,6 +36,7 @@
             <button onclick="showAlert()">Whatever you do, Don't Click this button</button>
             <br/>
             <button onclick="document.getElementById('demo').innerHTML = Date()">What time is it?</button>
+            <button onclick="myFunction()">Hide Something</button>
         </center>
         <p>Here are some reasons as to why I should get 100% on this lab.</p>
 
