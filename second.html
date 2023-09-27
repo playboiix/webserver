@@ -6,15 +6,15 @@
         <body bgcolor="#696969">
             <center>
                 <h1><FONT Color=#00FF00>Welcome to the Magic Land!</FONT></h1>
-                <h2><FONT Color=#40E0D0>Do you wish to take the portal back?</FONT></h2>
+                <h2 id="header"><FONT Color=#40E0D0>Do you wish to take the portal back?</FONT></h2>
                 <a href="index.html"><img src="portal.gif"/></a><br/>
                 <h3><FONT Color=#4B0082>If you wish to seek further darker magic....</FONT></h3>
                 <h4><FONT Color=#4B0082>then provide your contact information below and we will seek you soon..</FONT></h4>
                 <form>
-                    First Name:<input type="text"/ onblur="alert('This field is required')" required><br/>
-                    Last Name:<input type="text"/ required><br/>
-                    E-Mail:<input type="text"/ required><br/>
-                    Phone Number:<input type="text"/ required pattern="^(0|[1-9][0-9]*)$"><br/>
+                    First Name:<input type="text" onblur="document.getElementById('header').innerHTML = 'this field is required'"><br/>
+                    Last Name:<input type="text" required><br/>
+                    E-Mail:<input type="text" required><br/>
+                    Phone Number:<input type="text" required pattern="^(0|[1-9][0-9]*)$"><br/>
                     Gender:<br/>
                     <input type="radio" required name="gender"/>Male
                     <input type="radio" required name="gender"/>Female
