@@ -65,7 +65,7 @@
             <button onclick="chgtext(this)">Click to see woah</button>
         </center>
         <p>Here are some reasons as to why I should get 100% on this lab.</p>
-        <p><?= var_dump($_SERVER[‘HTTP_USER_AGENT’]) ?></p>
+        <p><?= var_dump($_SERVER['HTTP_USER_AGENT']) ?></p>
         <ul>
             <li>I am a good student.</li>
             <li>Most importantly because of <a href="https://www.youtube.com/watch?v=astISOttCQ0"target="_blank">this</a></li>
