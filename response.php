@@ -6,6 +6,6 @@
         <body bgcolor="#696969">
         <p><?= var_dump($_GET) ?></p>
         <p><?= var_dump($_POST) ?></p>
-        <p>Hello your name is: <?=(G_POST["firstname"]) ?></p>
+        <p>Hello your name is: <?=($_POST["firstname"]) ?></p>
         </body>
 </html>
