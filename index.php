@@ -99,5 +99,6 @@
             <br/>
             <input type="Submit" value="Submit"/>
         </form>
+        <button type="button">Create A New Student</button>
     </body>
 </html>
