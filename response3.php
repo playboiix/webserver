@@ -23,7 +23,7 @@
           $result = mysqli_query($conn, $sql);
             foreach($result as $row)
             {
-                echo "A {$row['gender']} human who is {$row['age']} years old and has an average of {$row['avg']}.</br>";
+                echo "A {$row['gender']} who is {$row['age']} years old and has an average of {$row['avg']}.</br>";
             }
             mysqli_close($conn);
         ?>
