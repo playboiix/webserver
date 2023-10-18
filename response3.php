@@ -11,13 +11,14 @@
             $password = "spiderman";
             $database = "DawsonCollege";
             $conn = mysqli_connect($server,$username,$password,$database);  
-            $sql = "insert into Students (gender, avg, age) values ('$gender', $avg, $age)";
+            $sql = "insert into Students (gender, avg, age) values ('$gender', $avg, $age);";
             $result = mysqli_query($conn, $sql);
             ?>
         </head>
         <body bgcolor="#6A5ACD">
         <?php
-          echo "You have successfully created a student echo <option value='{$row['gender']}'>{$row['age']}>{$row['avg']}</option>\n"; 
+          echo "You have successfully created a student";
+          $sql = "SELECT * FROM Students;"; 
         ?>
         </body>
 </html>
