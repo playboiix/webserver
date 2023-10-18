@@ -49,7 +49,7 @@
             // if (!$conn) 
             // {die("Connection failed: {mysqli_connect_error()}");}
             // echo "Connected successfully";              
-            // $sql = "select * from Students;";
+            $sql = "select * from Students;";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
