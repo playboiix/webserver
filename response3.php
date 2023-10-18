@@ -20,6 +20,7 @@
           echo "You have successfully created a student";
           $sql = "SELECT * FROM Students;";
           $result = mysqli_query($conn, $sql);
+          </br>
             foreach($result as $row)
             {
                 echo "A {$row['gender']} human who is {$row['age']} years old and has an average of {$row['avg']}.</br>";
