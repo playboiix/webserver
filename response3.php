@@ -11,14 +11,20 @@
             $password = "spiderman";
             $database = "DawsonCollege";
             $conn = mysqli_connect($server,$username,$password,$database);  
-            $sql = "insert into Students (gender, avg, age) values ('$gender', $avg, $age);";
+            $sql = "insert into Students (gender, avg, age) values ('$gender', $avg, $age)";
             $result = mysqli_query($conn, $sql);
             ?>
         </head>
         <body bgcolor="#6A5ACD">
         <?php
           echo "You have successfully created a student";
-          $sql = "SELECT * FROM Students;"; 
+          $sql = "SELECT * FROM Students;";
+          $result = mysqli_query($conn, $sql);
+          foreach($result as $row)
+          {
+              echo "A {$row['gender']} human who is {$row['age']} years old and has an average of {$row['avg']}.";
+          }
+          mysqli_close($conn);
         ?>
         </body>
 </html>

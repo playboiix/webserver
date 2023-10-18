@@ -101,8 +101,8 @@
         <br/>
         <form action="response3.php" method="get">
             Create a New Student:<br/>
-            <input type="radio" required name="gender" value="male"/>Male<br/>
-            <input type="radio" required name="gender" value="male"/>Female<br/>
+            <input type="radio" required name="gender" value="Male"/>Male<br/>
+            <input type="radio" required name="gender" value="Female"/>Female<br/>
             Age:<input type="text" name="age"><br/>
             Average:<input type="text" name="avg"><br/>
             <input type="submit"/>
