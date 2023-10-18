@@ -82,6 +82,7 @@
         </ul>
         <button onclick="loadDoc()">ajax</button>
         <span id="ajx"></span>
+
         <form action="response.php" method="get">
             <label for="gender">Select a gender:</label><br/>
             <select id="gender" name="gender">
@@ -89,7 +90,7 @@
                     foreach($result as $row)
                     {
                         echo "<option
-                        value='{$row['gender']}'>{$row['avg']}'>{$row['age']}'</option>\n";
+                        value='{$row['id']}'>{$row['gender']}</option>\n";
                     }
                     mysqli_close($conn);
                     ?>
