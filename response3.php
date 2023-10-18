@@ -17,8 +17,8 @@
         </head>
         <body bgcolor="#6A5ACD">
         <?php
-          echo "You have successfully created a student</br>";
-          echo "Here are all the students below </br>";
+          echo "You have successfully created a student.</br>";
+          echo "Here are all the students below:</br></br>";
           $sql = "SELECT * FROM Students;";
           $result = mysqli_query($conn, $sql);
             foreach($result as $row)
