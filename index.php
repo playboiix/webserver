@@ -46,18 +46,16 @@
             $password = "spiderman";
             $database = "DawsonCollege";
             $conn = mysqli_connect($server,$username,$password,$database);
-            if (!$conn) 
-            {die("Connection failed: {mysqli_connect_error()}");}
-            echo "Connected successfully";              
-            $sql = "select * from Students;";
+            // if (!$conn) 
+            // {die("Connection failed: {mysqli_connect_error()}");}
+            // echo "Connected successfully";              
+            // $sql = "select * from Students;";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
 
     <body bgcolor="#CCCCFF">
-
         <center>
-
             <h1><FONT Color=#6495ED>Welcome to the Traphouse!</FONT></h1>
             <h2><FONT Color=#DC143C>Enjoy your stay and chill out!</FONT></h2>
             <div id="div">This is my little website that i created for class :D</div>
@@ -84,5 +82,20 @@
         </ul>
         <button onclick="loadDoc()">ajax</button>
         <span id="ajx"></span>
+        <form action="response.php" method="get">
+            <label for="gender">Select a gender:</label><br/>
+            <select id="gender" name="gender">
+                <?php
+                    foreach($result as $row)
+                    {
+                        echo "<option
+                        value='{$row['gender']}'>{$row['avg']}'>{$row['age']}'</option>\n";
+                    }
+                    mysqli_close($conn);
+                    ?>
+            </select>
+            <br/>
+            <input type="submit" value="submit"/>
+        </form>
     </body>
 </html>
