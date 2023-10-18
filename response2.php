@@ -15,7 +15,7 @@
         </head>
         <body bgcolor="#6A5ACD">
         <p><?= var_dump($_GET) ?></p>
-        You selected a student who is... <?= $gender ?>.<br/>
+        You selected a student who is...<br/>
         <?php
             foreach($result as $row)
             {
