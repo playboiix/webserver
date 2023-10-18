@@ -83,6 +83,9 @@
         <button onclick="loadDoc()">ajax</button>
         <span id="ajx"></span>
         <br/>
+        <br/>
+        <br/>
+        <br/>
         <form action="response.php" method="get">
             <label for="gender">Select a gender:</label><br/>
             <select id="gender" name="gender">
