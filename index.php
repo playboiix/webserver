@@ -97,7 +97,7 @@
                     ?>
             </select>
             <br/>
-            <input type="submit" value="submit"/>
+            <input type="Submit" value="Submit"/>
         </form>
     </body>
 </html>
