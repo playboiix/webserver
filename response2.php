@@ -3,7 +3,7 @@
         <head>
             <title>Sauce Village</title>
             <?php
-            $gender= int($_GET["gender"]);
+            $gender= (int)($_GET["gender"]);
             $server = "localhost";
             $username = "sal";
             $password = "spiderman";
