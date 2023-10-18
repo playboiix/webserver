@@ -19,7 +19,7 @@
         <?php
             foreach($result as $row)
             {
-                echo "{$row['id']}";
+                echo "{$row['gender']}";
             }
             mysqli_close($conn);
         ?>
