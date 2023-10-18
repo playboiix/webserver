@@ -15,11 +15,11 @@
         </head>
         <body bgcolor="#6A5ACD">
         <p><?= var_dump($_GET) ?></p>
-        You selected a student who is...<br/>
+        The student you selected is...<br/>
         <?php
             foreach($result as $row)
             {
-                echo "A {$row['gender']} who is {$row['age']} years old and has an average of {$row['avg']}.";
+                echo "A {$row['gender']} human who is {$row['age']} years old and has an average of {$row['avg']}.";
             }
             mysqli_close($conn);
         ?>
