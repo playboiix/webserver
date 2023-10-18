@@ -46,10 +46,10 @@
             $password = "spiderman";
             $database = "DawsonCollege";
             $conn = mysqli_connect($server,$username,$password,$database);
-            if (!$conn) 
-            {die("Connection failed: {mysqli_connect_error()}");}
-            echo "Connected successfully";              
-            $sql = "select * from Students;";
+            // if (!$conn) 
+            // {die("Connection failed: {mysqli_connect_error()}");}
+            // echo "Connected successfully";              
+            // $sql = "select * from Students;";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
