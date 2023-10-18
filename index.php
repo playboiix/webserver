@@ -82,7 +82,7 @@
         </ul>
         <button onclick="loadDoc()">ajax</button>
         <span id="ajx"></span>
-
+        <br/>
         <form action="response.php" method="get">
             <label for="gender">Select a gender:</label><br/>
             <select id="gender" name="gender">
