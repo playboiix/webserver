@@ -19,7 +19,7 @@
         <?php
             foreach($result as $row)
             {
-                echo "{$row['gender']}";
+                echo "{$row['gender']} has {$row['id']}.";
             }
             mysqli_close($conn);
         ?>
