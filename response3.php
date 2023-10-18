@@ -17,10 +17,9 @@
         </head>
         <body bgcolor="#6A5ACD">
         <?php
-          echo "You have successfully created a student";
+          echo "You have successfully created a student</br>";
           $sql = "SELECT * FROM Students;";
           $result = mysqli_query($conn, $sql);
-          </br>
             foreach($result as $row)
             {
                 echo "A {$row['gender']} human who is {$row['age']} years old and has an average of {$row['avg']}.</br>";
