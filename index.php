@@ -99,7 +99,7 @@
             <br/>
             <input type="Submit" value="Submit"/>
         </form>
-        
+        <br/>
         <form action="response3.php" method="get">
             Create a New Student:<br/>
             <input type="radio" required name="gender" value="male"/>Male<br/>
@@ -108,5 +108,6 @@
             Average:<input type="text" name="avg"><br/>
             <input type="submit"/>
         </form>
+
     </body>
 </html>
