@@ -19,7 +19,7 @@
         <?php
             foreach($result as $row)
             {
-                echo "{$row['gender']}";
+                echo "{$row['gender']}>{$row['age']}>{[$row'avg]}";
             }
             mysqli_close($conn);
         ?>
