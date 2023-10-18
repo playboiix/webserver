@@ -14,7 +14,6 @@
             ?>
         </head>
         <body bgcolor="#6A5ACD">
-        <p><?= var_dump($_GET) ?></p>
         The student you selected is...<br/>
         <?php
             foreach($result as $row)
