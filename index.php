@@ -106,6 +106,7 @@
             <input type="radio" required name="gender" value="male"/>Female<br/>
             Age:<input type="text" name="age"><br/>
             Average:<input type="text" name="avg"><br/>
+            <input type="submit"/>
         </form>
     </body>
 </html>
