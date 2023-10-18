@@ -84,7 +84,7 @@
         <span id="ajx"></span>
         <br/>
         <br/>
-        <form action="response.php" method="get">
+        <form action="response2.php" method="get">
             <label for="gender">Select a student by their gender:</label>
             <select id="gender" name="gender">
                 <?php
