@@ -90,8 +90,7 @@
                 <?php
                     foreach($result as $row)
                     {
-                        echo "<option
-                        value='{$row['id']}'>{$row['gender']}</option>\n";
+                        echo "<option value='{$row['id']}'>{$row['gender']}</option>\n";
                     }
                     mysqli_close($conn);
                     ?>
