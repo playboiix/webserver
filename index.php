@@ -101,7 +101,8 @@
         </form>
         
         <form action="response3.php" method="get">
-            Gender:<input type="text" name="gender"><br/>
+            <input type="radio" required name="gender" value="male"/>Male<br/>
+            <input type="radio" required name="gender" value="male"/>Female<br/>
             Age:<input type="text" name="age"><br/>
             Average:<input type="text" name="avg"><br/>
         </form>
