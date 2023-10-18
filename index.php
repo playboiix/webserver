@@ -99,6 +99,11 @@
             <br/>
             <input type="Submit" value="Submit"/>
         </form>
-        <button type="button">Create A New Student</button>
+        
+        <form action="response3.php" method="get">
+            Gender:<input type="text" name="gender"><br/>
+            Age:<input type="text" name="age"><br/>
+            Average:<input type="text" name="avg"><br/>
+        </form>
     </body>
 </html>
