@@ -85,7 +85,7 @@
         <br/>
         <br/>
         <form action="response.php" method="get">
-            <label for="gender">Select a gender:</label><br/>
+            <label for="gender">Select a student by their gender:</label>
             <select id="gender" name="gender">
                 <?php
                     foreach($result as $row)
