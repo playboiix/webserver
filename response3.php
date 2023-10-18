@@ -20,11 +20,11 @@
           echo "You have successfully created a student";
           $sql = "SELECT * FROM Students;";
           $result = mysqli_query($conn, $sql);
-          foreach($result as $row)
-          {
-              echo "A {$row['gender']} human who is {$row['age']} years old and has an average of {$row['avg']}.";
-          }
-          mysqli_close($conn);
+            foreach($result as $row)
+            {
+                echo "A {$row['gender']} human who is {$row['age']} years old and has an average of {$row['avg']}.</br>";
+            }
+            mysqli_close($conn);
         ?>
         </body>
 </html>
