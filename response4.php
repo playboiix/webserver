@@ -2,12 +2,13 @@
 <html>
     <?php
         $led=(int)($_GET["led"]);
-        $led=(int)($_GET["led2"]);
+        $led2=(int)($_GET["led2"]);
     ?>
     <head>
         <title>Sauce Village</title>
     </head>
     <body bgcolor="#696969">
-    <p><?= `gpio write 0 $led`?></p>
+        <?= "led value: {$led}"?>
+    <p><?=`gpio write 0 $led`?></p>
     You changed the state of your LED!
 </html>
