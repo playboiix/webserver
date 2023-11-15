@@ -48,7 +48,7 @@
                 xhttp.send();
             }
         </script>
-        
+
         <?php
             $server = "localhost";
             $username = "sal";
@@ -124,5 +124,11 @@
             <input type="submit"/>
         </form>
         <button onclick="loadDoc2()">Toggle</button><br/>
+        <br/>BME Sensor<br/>
+
+        <form action="response6.php" method="get">
+            Get Results!<br/>
+        <input type="submit"/>
+        </form>
     </body>
 </html>
