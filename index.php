@@ -47,9 +47,8 @@
                 xhttp.open("GET", "response5.php", true);
                 xhttp.send();
             }
-
         </script>
-
+        
         <?php
             $server = "localhost";
             $username = "sal";
