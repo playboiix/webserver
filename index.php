@@ -107,6 +107,12 @@
             Average:<input type="text" name="avg"><br/>
             <input type="submit"/>
         </form>
-
+        <form action="response4.php" method="get">
+            LED Control:<br/>
+            Send Specific Value:
+            <input type="radio" required name="led" value="0"/>0<br/>
+            <input type="radio" required name="led" value="1"/>1<br/>
+            <input type="button" required name="led2" value="toggle"/>Toggle<br/>
+            <input type="submit"/>
     </body>
 </html>
