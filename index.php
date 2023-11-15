@@ -38,6 +38,16 @@
                 xhttp.open("GET", "ajx.txt", true);
                 xhttp.send();
             }
+
+            function loadDoc2() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("tgl").innerHTML = this.responseText;
+                    }
+                xhttp.open("GET", "response5.php", true);
+                xhttp.send();
+            }
+
         </script>
 
         <?php
@@ -112,7 +122,8 @@
             Send Specific Value:<br/>
             <input type="radio" required name="led" value="0"/>0
             <input type="radio" required name="led" value="1"/>1<br/>
-            <input type="button" required name="led2" value="Toggle"/><br/>
             <input type="submit"/>
+        </form>
+        <button onclick="loadDoc2()">Toggle</button><br/>
     </body>
 </html>
