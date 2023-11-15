@@ -127,7 +127,7 @@
         <br/>BME Sensor<br/>
 
         <form action="response6.php" method="get"><br/>
-        <input type="Get Results!"/>
+        <input type="submit"/>
         </form>
     </body>
 </html>
