@@ -126,9 +126,8 @@
         <button onclick="loadDoc2()">Toggle</button><br/>
         <br/>BME Sensor<br/>
 
-        <form action="response6.php" method="get">
-            Get Results!<br/>
-        <input type="submit"/>
+        <form action="response6.php" method="get"><br/>
+        <input type="Get Results!"/>
         </form>
     </body>
 </html>
