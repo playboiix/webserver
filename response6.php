@@ -8,5 +8,5 @@
         <title>Sauce Village</title>
     </head>
     <body bgcolor="#696969">
-    <p><?=$deserialized["temperature"]?></p>
+    <p>The sensor you are using is <?=$deserialized["sensor"]?></p>
 </html>
