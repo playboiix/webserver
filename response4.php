@@ -9,4 +9,5 @@
     </head>
     <body bgcolor="#696969">
     <p><?= `gpio write 0 $led`?></p>
+    You changed the state of your LED!
 </html>
