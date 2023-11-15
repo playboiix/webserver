@@ -8,7 +8,6 @@
         <title>Sauce Village</title>
     </head>
     <body bgcolor="#696969">
-        <?= "led value: {$led}"?>
     <p><?=`gpio write 0 $led`?></p>
     You changed the state of your LED!
 </html>
