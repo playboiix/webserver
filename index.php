@@ -110,8 +110,8 @@
         <form action="response4.php" method="get">
             <br/>LED Control:<br/>
             Send Specific Value:<br/>
-            <input type="radio" required name="led" value="0"/>0<br/>
-            <input type="radio" required name="led" value="1"/>1
+            <input type="radio" required name="led" value="0"/>0
+            <input type="radio" required name="led" value="1"/>1<br/>
             <input type="button" required name="led2" value="Toggle"/><br/>
             <input type="submit"/>
     </body>
