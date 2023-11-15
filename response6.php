@@ -8,5 +8,5 @@
         <title>Sauce Village</title>
     </head>
     <body bgcolor="#696969">
-    <p><?=`echo $deserialized["temperature"]`;?></p>
+    <p><?=$deserialized["temperature"];?></p>
 </html>
