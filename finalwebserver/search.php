@@ -15,7 +15,7 @@
         </head>
         <body bgcolor="#6A5ACD">
             <?php
-            header('Location: https://google.com/search?q={$search}');
+            header('Location: https://google.com/search?q='{$search});
             $result = mysqli_query($conn, $sql);
             mysqli_close($conn);
             ?>
