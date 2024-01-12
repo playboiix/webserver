@@ -19,5 +19,10 @@
         <center>
             <img id="img" src="google.png"/><br/>
         </center>
+        <form action="search.php" method="get">
+            Perform a Google Search:<br/>
+            Search:<input type="text" name="search"><br/>
+            <input type="submit"/>
+        </form>
     </body>
 </html>
