@@ -15,10 +15,7 @@
         </head>
         <body>
             <?php
-            //header("Location: https://google.com/search?q={$search}");
-            echo $sql;
-            echo $search;
-            echo $_SERVER;
+            header("Location: https://google.com/search?q={$search}");
             $sql = "insert into Logs (search, ip) values ('$search', $ip)";
             $result = mysqli_query($conn, $sql);
 
