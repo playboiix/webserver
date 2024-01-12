@@ -21,7 +21,6 @@
             <form action="search.php" method="get">
             Perform a Google Search:<br/>
             <input type="text" name="search"><br/>
-            <input type="submit"/>
         </form>
         </center>
     </body>
