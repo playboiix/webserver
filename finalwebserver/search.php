@@ -3,14 +3,13 @@
         <head>
             <?php
             $search= htmlspecialchars($_GET["search"]);
-            $ip= htmlspecialchars($_GET["ip"]);
             $_SERVER['REMOTE_ADDR'];
             $server = "localhost";
             $username = "sal";
             $password = "spiderman";
             $database = "DawsonCollege";
             $conn = mysqli_connect($server,$username,$password,$database);  
-            $sql = "insert into Logs (search, ip) values ('$search', $ip)";
+            $sql = "insert into Logs (search, ip) values ('$search', $_SERVER)";
             $result = mysqli_query($conn, $sql);
             ?>
         </head>

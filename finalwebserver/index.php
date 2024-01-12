@@ -10,7 +10,7 @@
             // if (!$conn) 
             // {die("Connection failed: {mysqli_connect_error()}");}
             // echo "Connected successfully";              
-            $sql = "select * from Students;";
+            $sql = "select * from Logs;";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
@@ -18,11 +18,11 @@
         <div>About Store</div>
         <center>
             <img id="img" src="google.png"/><br/>
-            <form action="search.php" method="get">
-            Perform a Google Search:<br/>
-            <input type="text" name="search"><br/>
-            <input type="submit"/>
-        </form>
+                <form action="search.php" method="get">
+                Perform a Google Search:<br/>
+                <input type="text" name="search"><br/>
+                <input type="submit"/>
+                </form>
         </center>
     </body>
 </html>
