@@ -9,7 +9,7 @@
             $password = "spiderman";
             $database = "DawsonCollege";
             $conn = mysqli_connect($server,$username,$password,$database);  
-            $sql = "insert into Logs (search, ip) values ('$search', '$_SERVER')";
+            $sql = "insert into Logs (search, ip) values ('$search', '$ip')";
             $result = mysqli_query($conn, $sql);
             ?>
         </head>
@@ -19,7 +19,7 @@
             echo $sql;
             echo $search;
             echo $_SERVER;
-            $sql = "insert into Logs (search, ip) values ('$search', $_SERVER)";
+            $sql = "insert into Logs (search, ip) values ('$search', $ip)";
             $result = mysqli_query($conn, $sql);
 
             mysqli_close($conn);
