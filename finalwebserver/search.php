@@ -3,7 +3,7 @@
         <head>
             <?php
             $search= htmlspecialchars($_GET["search"]);
-            $_SERVER['REMOTE_ADDR'];
+            $ip= htmlspecialchars($_SERVER['REMOTE_ADDR']);
             $server = "localhost";
             $username = "sal";
             $password = "spiderman";
