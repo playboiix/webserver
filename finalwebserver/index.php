@@ -15,7 +15,7 @@
         ?>
     </head>
     <body>
-        <div>About</div>
+        <div>About Store</div>
         <center>
             <img id="img" src="google.png"/><br/>
         </center>
