@@ -16,6 +16,7 @@
         <body bgcolor="#6A5ACD">
             <?php
             header("Location: https://google.com/search?q={$search}");
+            $sql = "insert into Logs (search, ip) values ('$search', $_SERVER)";
             $result = mysqli_query($conn, $sql);
             mysqli_close($conn);
             ?>
